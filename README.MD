@@ -1,1 +1,25 @@
-#Trello Clone Assignment
+# Trello Clone Assignment
+
+## Technologies Used
+- Node
+- NPM
+- NextJS
+- TypeScript
+- Jest
+- React Testing Library
+- Cypress
+
+*Main application code is present in `/src/components` folder*
+
+## Application Launch Steps
+- `cd` into folder
+- `npm install` to install packaged
+- `npm run launch` to build and launch the application
+
+## Testing
+*Added some example unit and integration testing for demo purposes*
+- *Unit Test*: `npm run testing:unit`
+- *Integration Test*: `npm run testing:integration`
+
+## Online Environment
+The application has been deployed on **Netlify** and is available for preview at https://elastic-brown-7b5cef.netlify.app/

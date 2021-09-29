@@ -11,7 +11,9 @@ type ListProps = {
 const List: React.FC<ListProps> = ({ header, listKey }) => {
     return (
         <section className={styles.container}>
-            <h2 className={styles.list_title}>{header}</h2>
+            <h2 className={styles.list_title} data-testid="list-column-title">
+                {header}
+            </h2>
             <CardList listKey={listKey} />
             <CreateCard listKey={listKey} />
         </section>

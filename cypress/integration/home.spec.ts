@@ -1,19 +1,8 @@
-describe("Homepage", () => {
+describe("Trello Clone Integration Testing", () => {
     beforeEach(() => {
         cy.visit("/");
     });
-    it("Brings header", () => {
-        cy.getBySel("main-heading").should("contain.text", "superplate");
-    });
-
-    it("Should have true href", () => {
-        // https://github.com/cypress-io/cypress-example-recipes/blob/master/examples/testing-dom__tab-handling-links/cypress/integration/tab_handling_anchor_links_spec.js
-        cy.getBySel("docs-btn-anchor")
-            .should("have.prop", "href")
-            .and("equal", "https://pankod.github.io/superplate/");
-    });
-
-    it("Should have icons", () => {
-        cy.getBySel("icon").should("have.length", 6);
+    it("Must Have Four List Columns", () => {
+        cy.getBySelId("list-column-title").should("have.length", 4);
     });
 });

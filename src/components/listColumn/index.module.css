@@ -1,7 +1,7 @@
 .container {
     background: #e8e9ed;
     border-radius: 0.125rem;
-    width: 25rem;
+    width: 20rem;
     padding:1rem .5rem;
     color:#132943;
     display: flex;
@@ -13,4 +13,10 @@
     font-size: 1rem;
     margin:0 0 1rem;
     padding:0 0.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        overflow: hidden;
+    }
 }
