@@ -1,0 +1,11 @@
+.container {
+    padding: 0.5rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0.5rem;
+    grid-auto-flow: column;
+    grid-template-areas: ". . . .";
+    height: 100%;
+    box-sizing: border-box;
+}
