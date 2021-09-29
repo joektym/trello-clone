@@ -14,8 +14,9 @@
 
 ## Application Launch Steps
 - `cd` into folder
-- `npm install` to install packaged
+- `npm install` to install packages
 - `npm run launch` to build and launch the application
+*Application is set to run at http://localhost:3000/*
 
 ## Testing
 *Added some example unit and integration testing for demo purposes*
