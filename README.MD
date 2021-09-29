@@ -5,6 +5,7 @@
 - NPM
 - NextJS
 - TypeScript
+- Recoil
 - Jest
 - React Testing Library
 - Cypress
