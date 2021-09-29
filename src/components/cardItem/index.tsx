@@ -10,21 +10,29 @@ type CardItemProps = {
 const CardItem: React.FC<CardItemProps> = ({ cardText, listKey }) => {
     const [dragDropData, setDragDropData] = useRecoilState(dragDrop);
     return (
-        <article
-            draggable
-            onDragStart={(e) => {
-                setDragDropData({
-                    ...dragDropData,
-                    source:
-                        e?.currentTarget?.getAttribute("data-listkey") || "",
-                    text: e?.currentTarget?.innerText,
-                });
-            }}
-            className={styles.mainContainer}
-            data-listkey={listKey}
-        >
-            {cardText}
-        </article>
+        <>
+            {cardText.length ? (
+                <article
+                    draggable
+                    onDragStart={(e) => {
+                        setDragDropData({
+                            ...dragDropData,
+                            source:
+                                e?.currentTarget?.getAttribute(
+                                    "data-listkey",
+                                ) || "",
+                            text: e?.currentTarget?.innerText,
+                        });
+                    }}
+                    className={styles.mainContainer}
+                    data-listkey={listKey}
+                >
+                    {cardText}
+                </article>
+            ) : (
+                <></>
+            )}
+        </>
     );
 };
 

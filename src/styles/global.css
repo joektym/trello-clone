@@ -7,10 +7,39 @@ body {
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
     background: #00a6c3;
-    overflow-x: scroll;
     height: 100%;
+    overflow-x: scroll;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  body{
+    scrollbar-width: thin;
+    scrollbar-color: #63b8c6 #008da6;
+  }
+
+  /* Chrome, Edge, and Safari */
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #008da6;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #63b8c6;
+    border-radius: 4px;
+    border: 0px none #008da6;
+  }
+
 
 body > div {
     height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+    html, body {
+        overflow-x: hidden;
+    }
 }
